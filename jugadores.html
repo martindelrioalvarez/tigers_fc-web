@@ -13,61 +13,73 @@
 
     <!-- Sección de cartas de jugadores -->
     <section class="player-cards">
-        <div class="card">
+        <div class="card" onclick="openModal('Villa', 'Número: 2', 'O pasa el balón o pasa el jugador (o los dos).', 'img/villaraviz.jpg')">
             <img src="img/villaraviz.jpg" alt="Villa">
             <h3>Villa</h3>
             <p>Número: 2</p>
         </div>
-        <div class="card">
+        <div class="card" onclick="openModal('Conde', 'Número: 3', 'Tiene dos pies izquierdos, pero lo que cuenta es la intención.', 'img/conde.jpg')">
             <img src="img/conde.jpg" alt="Conde">
             <h3>Conde</h3>
             <p>Número: 3</p>
         </div>
-        <div class="card">
+        <div class="card" onclick="openModal('Vasco', 'Número: 4', 'Esperemos que sea mejor jugador de fútbol que de LOL.', 'img/vasco.jpg')">
             <img src="img/vasco.jpg" alt="Vasco">
             <h3>Vasco</h3>
             <p>Número: 4</p>
         </div>
-        <div class="card">
+        <div class="card" onclick="openModal('Castro', 'Número: 6', 'Velocidad y picouchos por doquier.', 'img/castro.jpg')">
             <img src="img/castro.jpg" alt="Castro">
             <h3>Castro</h3>
             <p>Número: 6</p>
         </div>
-        <div class="card">
+        <div class="card" onclick="openModal('Oscar', 'Número: 7', 'Jugador de cristal, esperemos que venga al menos a la mitad de los partidos.', 'img/gesti.jpg')">
             <img src="img/gesti.jpg" alt="Oscar">
             <h3>Oscar</h3>
             <p>Número: 7</p>
         </div>
-        <div class="card">
+        <div class="card" onclick="openModal('Delri', 'Número: 9', 'El más luchador del equipo (y el menos dotado futbolísticamente).', 'img/delri.jpg')">
             <img src="img/delri.jpg" alt="Delri">
             <h3>Delri</h3>
             <p>Número: 9</p>
         </div>
-        <div class="card">
+        <div class="card" onclick="openModal('Diogo', 'Número: 10', 'Box-to-box incansable, pequeño pero matón.', 'img/diogo.jpg')">
             <img src="img/diogo.jpg" alt="Diogo">
             <h3>Diogo</h3>
             <p>Número: 10</p>
         </div>
-        <div class="card">
+        <div class="card" onclick="openModal('Mouri', 'Número: 21', 'Como haya un partido los miercoles o viernes no viene (sale siempre en busca de hoes).', 'img/mouri_baja.png')">
             <img src="img/mouri_baja.png" alt="Mouri">
             <h3>Mouri</h3>
             <p>Número: 21</p>
         </div>
-        <div class="card">
+        <div class="card" onclick="openModal('Firmi', 'Número: 22', 'Chepa de época, y no es de cargar con el equipo.', 'img/firmi.jpg')">
             <img src="img/firmi.jpg" alt="Firmi">
-            <h3>Firmi</h3>
+            <h3><span class="captain-badge">♔ Firmi</h3>
             <p>Número: 22</p>
         </div>
-        <div class="card">
+        <div class="card" onclick="openModal('Juanfi', 'Número: 99', 'Como tenga un día malo nos meten 9 goles.', 'img/juanfi.jpg')">
             <img src="img/juanfi.jpg" alt="Juanfi">
             <h3>Juanfi</h3>
             <p>Número: 99</p>
         </div>
-        <!-- Agrega más cartas de jugadores -->
     </section>
+
+    <!-- Modal para detalles del jugador -->
+    <div id="playerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="playerImage" src="" alt="Jugador" class="modal-image">
+            <h2 id="playerName"></h2>
+            <p id="playerNumber"></p>
+            <p id="playerDescription"></p>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Tigers FC - Liga Universitaria</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
