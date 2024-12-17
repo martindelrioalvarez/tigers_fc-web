@@ -166,3 +166,23 @@ footer {
     border-radius: 5px;
     margin-left: 0.5rem;
 }
+
+.stats-summary {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #222;
+    color: #f1f1f1;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.stats-summary h3 {
+    margin: 0.5rem 0;
+    color: #ff6600;
+}
+
+.stats-summary p {
+    font-size: 1.1rem;
+    margin: 0.2rem 0;
+}
